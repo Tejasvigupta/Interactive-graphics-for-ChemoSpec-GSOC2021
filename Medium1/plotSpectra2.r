@@ -62,10 +62,9 @@ plotSpectra2<-function(spectra,which,
 }  
 
 library(ChemoSpec)
-data(metMUD1)
-plotSpectra(metMUD1,
-    main = "metMUD1 NMR Data",
-    which = 10, yrange = c(0, 1.5),
-    amplify = 10, lab.pos = 0.5,
-    leg.loc = list(x = 3.2, y = 1.45)
+data("SrE.IR")
+plotSpectra(SrE.IR,
+            which = 10, yrange = c(0, 1.5),
+            amplify = 10, lab.pos = 0.5,
+            leg.loc = list(x = 3.2, y = 1.45)
 )
