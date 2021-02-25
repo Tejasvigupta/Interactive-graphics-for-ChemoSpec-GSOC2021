@@ -1,10 +1,17 @@
-plotSpectra3<-function(spectra,which,
+plotSpectra3<-function(spectra,
+                       which=1,
                        main = "none",
                        yrange = range(spectra$data),
                        amplify = 1.0,
                        lab.pos=mean(spectra$freq),
                        showGrid = TRUE , ...) {
   chkSpectra(spectra)
+  
+   #condition to check whether the length of the "which" argument is 1 or not 
+  if(length(which)!=1)
+  {
+    stop("Arguement 'which' length must be equal to 1")
+  }
   
   #Extracting the data from spectra object and amplifying it
   spectrum<-spectra$data[which,]*amplify
