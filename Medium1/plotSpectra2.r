@@ -36,12 +36,19 @@
 #' @return None.  Side effect is a plot.
 
 
-plotSpectra2<-function(spectra,which,
+plotSpectra2<-function(spectra,
+                       which=1,
                        yrange = range(spectra$data),
                        amplify = 1.0,
                        lab.pos=mean(spectra$freq),
                        showGrid = TRUE ,leg.loc = "none" , ...) {
   chkSpectra(spectra)
+  
+  #condition to check whether the length of the "which" argument is 1 or not 
+   if(length(which)!=1)
+  {
+    stop("Arguement 'which' length must be equal to 1")
+  }
   
   # set up and plot the first spectrum
   spectrum<-spectra$data[which,]*amplify
