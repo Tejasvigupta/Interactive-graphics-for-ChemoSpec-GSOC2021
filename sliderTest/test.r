@@ -2,6 +2,7 @@ library(shiny)
 library(ggplot2)
 library(ChemoSpec)
 library(plotly)
+library(reshape2)
 
 data(SrE.IR)
 
@@ -65,10 +66,10 @@ ui<-fluidPage(
   sidebarLayout(
     sidebarPanel(
       sliderInput(inputId="offset",
-                        label="offset",
-                        min = 0,
-                        max = 1,
-                        value = 0.3),
+                  label="offset",
+                  min = 0,
+                  max = 1,
+                  value = 0.3),
       sliderInput(inputId = "amplify",
                   label = "Amplify",
                   min = 1,
