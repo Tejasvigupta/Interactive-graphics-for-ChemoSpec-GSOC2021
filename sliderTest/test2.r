@@ -1,4 +1,10 @@
 #Importing Libraries
+if (!require("shiny")) install.packages("shiny")
+if (!require("shinyWidgets")) install.packages("shinyWidgets")
+if (!require("ggplot2")) install.packages("ggplot2")
+if (!require("ChemoSpec")) install.packages("ChemoSpec")
+if (!require("plotly")) install.packages("plotly")
+if (!require("reshape2")) install.packages("reshape2")
 library(shiny)
 library(shinyWidgets)
 library(ggplot2)
