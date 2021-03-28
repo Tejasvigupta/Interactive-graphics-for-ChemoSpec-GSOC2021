@@ -74,7 +74,7 @@ plotspectra6<-function(spectra, which = c(1),
         name<-c()
         for (i in which)
         {
-          name<-c(name,spectra$names[which[i]])
+          name<-c(name,spectra$names[i])
         }
         names(df)<-c("WaveNumber",name)
         #df
