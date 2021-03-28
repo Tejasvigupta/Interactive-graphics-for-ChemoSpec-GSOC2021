@@ -36,7 +36,7 @@ plotspectra6<-function(spectra, which = c(1),
         column(3,offset=1,sliderInput(inputId = "amplify",
                     label = "Amplify",
                     min = 1,
-                    max = 5,
+                    max = 10,
                     value = 1)),
         column(3,offset=1,sliderInput(inputId = "yrange",
                     label = "Yrange",
@@ -104,7 +104,7 @@ plotspectra6<-function(spectra, which = c(1),
         o<-ggplotly(p,tooltip="text",height=600)
       }
       
-      plotSpectra5(SrE.IR,which=which,amplify=input$amplify ,yrange=c(0,input$yrange),offset=input$offset)
+      plotSpectra5(spectra,which=which,amplify=input$amplify ,yrange=c(0,input$yrange),offset=input$offset)
       
     })
     
