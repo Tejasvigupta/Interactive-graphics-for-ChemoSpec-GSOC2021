@@ -23,3 +23,16 @@ As this was my first week I made a lot mistakes but Bryan was always there to th
 
 ### My commits during this period :
 https://github.com/bryanhanson/ChemoSpec/pull/38/commits
+
+
+## Week2
+After an amazing first week, things have started to pick up the pace.This week started with me fixing the minor bugs in the `plotSpectra` function. After `plotSpectra` function was merged, I decided to work on the `loopThruSpectra` function. For `loopThruSpectra` function we decided to make some changes in the `ggplot2` mode. In base grahpics mode the user goes through all the `spectra` available in the data one by one but in `ggplot2` mode the user will be able to review all the `spectra` stored as all of them will be stacked vertically. Because `loopThruSpectra` function will basically help in reviewing all the `spectra` sstored in the data, Bryan decided to rename the function as `reviewAllSpectra`.
+After the completion of `reviewAllSpectra` function and its documentation I decided to work on `surveySpectra` function. The main thing in `surveySpectra` function was to implement the faceting. Once I understood the concept of faceting in `ggplot2`, I completed the function and it's documentaion without any problem. My pull request was merged after it passed the build and check. During this week Bryan also made some changes in the `base` graphics mode to speed up the working of the function. After this I decided to work on the `plotLoading` function rather than `surveySpectra2` function as it seeemed a little less less complicated. `plotLoading` was kind of similar to `surveySpectra` function so I was able to wrap it up quickly without any problems. I had first used `geom_area` for the plot, but later on close inspection of the function in `base` mode on `metMUD1` dataset I decided to switch to `geom_segment`. Apart from coding I also had a chance to interact with Bryan about NMR Spectroscopy and its working.
+
+Overall this was great week with lot's of new learning! On to Week 3!
+
+### My commits during this period :
+https://github.com/bryanhanson/ChemoSpec/pull/39/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/40/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/41/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/42/commits<br>
