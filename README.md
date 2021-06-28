@@ -27,7 +27,7 @@ https://github.com/bryanhanson/ChemoSpec/pull/38/commits
 
 ## Week2
 After an amazing first week, things have started to pick up the pace. This week started with me fixing the minor bugs in the `plotSpectra` function. After `plotSpectra` function was merged, I decided to work on the `loopThruSpectra` function. For `loopThruSpectra` function we decided to make some changes in the `ggplot2` mode. In base grahpics mode the user goes through all the `spectra` available in the data one by one but in `ggplot2` mode the user will be able to review all the `spectra` stored as all of them will be stacked vertically. Because `loopThruSpectra` function will basically help in reviewing all the `spectra` stored in the data, Bryan decided to rename the function as `reviewAllSpectra`.
-After the completion of `reviewAllSpectra` function and its documentation I decided to work on `surveySpectra` function. The main thing in `surveySpectra` function was to implement the faceting. Once I understood the concept of faceting in `ggplot2`, I completed the function and it's documentaion without any problem. During this week Bryan also made some changes in the `base` graphics mode to speed up the working of the function. After this I decided to work on the `plotLoading` function rather than `surveySpectra2` function as it seemed a little less complicated. `plotLoading` was kind of similar to `surveySpectra` function so I was able to wrap it up quickly without any problems. I had first used `geom_area` for the plot, but later on close inspection of the function in `base` mode on `metMUD1` dataset I decided to switch to `geom_segment`. Apart from coding I also had a chance to interact with Bryan about NMR Spectroscopy and its working.
+After the completion of `reviewAllSpectra` function and its documentation I decided to work on `surveySpectra` function. The main thing in `surveySpectra` function was to implement the faceting. Once I understood the concept of faceting in `ggplot2`, I completed the function and it's documentaion without any problem. During this week Bryan also made some changes in the `base` graphics mode to speed up the working of the function. After this I decided to work on the `plotLoading` function rather than `surveySpectra2` function as it seemed a little less complicated. `plotLoading` was kind of similar to `surveySpectra` function so I was able to wrap it up quickly without any problems. I had first used `geom_area` for the plot, but later on close inspection of the function in `base` mode on `metMUD1` dataset I decided to switch to `geom_segment`.
 
 Overall this was great week with lot's of new learning! On to Week 3!
 
@@ -36,3 +36,14 @@ https://github.com/bryanhanson/ChemoSpec/pull/39/commits<br>
 https://github.com/bryanhanson/ChemoSpec/pull/40/commits<br>
 https://github.com/bryanhanson/ChemoSpec/pull/41/commits<br>
 https://github.com/bryanhanson/ChemoSpec/pull/42/commits<br>
+
+
+## Week3
+This week started with me working on the `ggplot2` mode for `surveySpectra2` function. This function was a lot similar to the `plotSpectra` function so after understanding the `base` mode I was able to figure out the logic for the same for `ggplot2` mode. Now that nost of the 1d plot functions were over, it was time for 2d plot functions. Working on the even the first function turned out to be a very big deal. Most of the 2d functions in `ChemoSpec` depends on the `ChemoSpecUtils` package. I decided to start my work with `pcaDiag` function. `pcaDiag` was fairly simple to code until I got to the `.labelExtreme` part. `.labelExtreme` is a utility function from `ChemoSpecUtils` which plots the label of the extrme data points. As the `base` mode is slightly different from `ggplot2` mode so we decided to  make another function `getExtremeCoords` specifically for `ggplot2` mode.  `getExtremeCoords` basically uses `labelExtreme` function to get the coordinates of the labels and returns a list of them. The main idea for creating this function was to get the data and not interfere with `base` mode code. Finally I have completed the code for `pcaDiag` function. Some problems still remains regarding build and check though but these will be rectified in the next week.
+
+On to week 4!
+
+### My commits during this period :
+https://github.com/bryanhanson/ChemoSpec/pull/43/commits<br>
+https://github.com/bryanhanson/ChemoSpecUtils/pull/2/commits<br>
+https://github.com/bryanhanson/ChemoSpecUtils/pull/3/commits<br>
