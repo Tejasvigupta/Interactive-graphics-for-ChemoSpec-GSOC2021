@@ -47,3 +47,15 @@ On to week 4!
 https://github.com/bryanhanson/ChemoSpec/pull/43/commits<br>
 https://github.com/bryanhanson/ChemoSpecUtils/pull/2/commits<br>
 https://github.com/bryanhanson/ChemoSpecUtils/pull/3/commits<br>
+
+
+## Week4
+The very first task in this week was to solve the build and check process issue. Because `ChemoSpec` depends on `ChemoSpecUtils` we have decided to only locally run the build and check process for now. Since `pcaDiag` function was working fine locally, we merged it. After `pcaDiag` I decied to work on `splotSpectra`. `splotSpectra` was a relativly simple to code and so I was able to do it without any problem. After this I worked on `plotSpectraDist` function. This function was also relativly simple to code, however I faced a problem in labeling part. This wasn't the first time I was facing this problem, so for now I decided to use a fudge factor to make the labels seperated from the plot points. While working on all the new functions we came across a new package `patchwork`. I had already worked on `plotLoading` function's `ggplot2` mode but we thought of giving a try to `patchworks` package.`patchwork` package helps user in organizing the different plots in a grid. The plot has turned out to be really nice, maybe even better than before. However, we are still thinking about the function. Overall it required quite a lot of thinking as I had to change the way data was organized in the `base` graphics for the code to work. Best part of coding this function was discovering a new way to plot multiple `ggplots` using `for` loop. For now we are sticking to plot made using `patchwork`.
+
+Next week we have use R! conference! This is the first time I will be attending any live conference, so I am looking forward to it. 
+
+### My commits during this period :
+https://github.com/bryanhanson/ChemoSpec/pull/44/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/45/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/47/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/49/commits<br>
