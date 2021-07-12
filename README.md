@@ -59,3 +59,15 @@ https://github.com/bryanhanson/ChemoSpec/pull/44/commits<br>
 https://github.com/bryanhanson/ChemoSpec/pull/45/commits<br>
 https://github.com/bryanhanson/ChemoSpec/pull/47/commits<br>
 https://github.com/bryanhanson/ChemoSpec/pull/49/commits<br>
+
+
+## Week5
+With this week, the first half of GSoC has come to an end. This week was different from all the previous weeks. This week I attended `use R!` conference. It was a really nice experience for me as I got to know more about the R language,it's packages and it's community. 
+
+Apart form `use R!` conference I worked on the remaining funcitons. I started my work with `plot2Loadings` function. As `plot2loading` was similar to functions previously done by me, I was able to write the `ggplot2` mode without any problem. While I was completing the function, Brayan came across a bug in `surveySpectra` function. So so after I completed the `plot2loading` function, I worked on the `surveySpectra` function and added the missing code. After completing these functions I started my work on `plotScree` function in the `ChemoSpecUtils` package. The print statement was causing a little problem in rendering of the ggplots, so we decided to "return" the ggplots rather than printing them. This will ensure that `ggplot` plot always gets printed after the function is called. Lastly, I completed the code for `ggplot` mode of the `plotScree` function. 
+
+### My commits during this period :
+https://github.com/bryanhanson/ChemoSpec/pull/50/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/51/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/52/commits<br>
+https://github.com/bryanhanson/ChemoSpecUtils/pull/4/commits<BR>
