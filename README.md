@@ -79,5 +79,5 @@ After plotting the points I worked on plotting the `ellipses`. Initially I decid
 
 With this function `ggplot2` mode is comming to an end with final testing and documentation remaining. By the end of next week I will hopely start my work on `plotly` mode.
 
-###My commits during this period :
+### My commits during this period :
 Commits of this week will be in the the pull request which will be merged next week.<br>
