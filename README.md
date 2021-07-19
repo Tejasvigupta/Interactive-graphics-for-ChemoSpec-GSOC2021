@@ -70,4 +70,14 @@ Apart form `use R!` conference I worked on the remaining funcitons. I started my
 https://github.com/bryanhanson/ChemoSpec/pull/50/commits<br>
 https://github.com/bryanhanson/ChemoSpec/pull/51/commits<br>
 https://github.com/bryanhanson/ChemoSpec/pull/52/commits<br>
-https://github.com/bryanhanson/ChemoSpecUtils/pull/4/commits<BR>
+https://github.com/bryanhanson/ChemoSpecUtils/pull/4/commits<br>
+
+
+## Week6
+This week was probably the most toughest week.This week I worked on `plotScores` function. `plotScores` function is a combination of 4 functions working together to make the plot. It was a little difficult to get started with it as the code was more complex than the rest of the functions till now. Once I understood the code of the function, I started with plotting the points. This is a special function as it used two kinds of symbol modes. In case of `use.sym==FALSE` the function plots a plot with same symbols but different colors, representing differnt `spectra's`. On the other hand `use.sym==TRUE` plots a black and white plot with diffenrent `spectra's` representing differnt symbols.
+After plotting the points I worked on plotting the `ellipses`. Initially I decided to to use the `stat_ellipse` geom, but later decied to use `geom_path` over it. `Stat_ellipse` basically calculates the coordinates of the ellipse and then plot them, however in our case we already had the coordinates precalculated so using `stat_ellipse` seemed unnecessary. There are three options for plotting an ellipse in `plotScores`. First is classical way, second is robust way and the third way is plotting both of them together. I coded the ellipses one by one. After coding th plot my main focus was to use somehow use the `leg.loc` (legend location) used in base mode in `ggplot2` mode. Sadly, `ggplot2` does not provide a way of directly putting the `legend` in the desired position such as `topright` or `bottomright` etc . I manually hardcoded the conditions in `ggplot2` mode. Finally I worked on putting the ellipse information and method on the plot along with labelling of the points. 
+
+With this function `ggplot2` mode is comming to an end with final testing and documentation remaining. By the end of next week I will hopely start my work on `plotly` mode.
+
+###My commits during this period :
+Commits of this week will be in the the pull request which will be merged next week.<br>
