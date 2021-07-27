@@ -81,3 +81,19 @@ With this function `ggplot2` mode is comming to an end with final testing and do
 
 ### My commits during this period :
 Commits of this week will be in the the pull request which will be merged next week.<br>
+
+## Week7
+This week started with me completing the `plotScores` function in `ChemoSpecUtils`. The function was merged successfully. With this function the majot part of `ggplot2` mode is completed. While reviewing the code Bryan found a lot of functions where the code was getting repeated and could be simplified so I started my work on such functions.The main idea behind simplification was to create a function inside of the function, so instead of writing many lines of code a simple call to the function will do the job.I worked on `plot2Loadins` and many other other functions. After that I spent most of the time fixing small-small bugs in the functions. Legend layout was a little cramped so I had to work on that too. This week I learned about `Rmarkdown` too. I made some changes in the development version of the `Rmakdown` file. 
+
+Overall, there were a lot of minor tasks were worked on and completed throughout the week. Next week will mark the beginning of `plotly` mode!
+
+### My commits during this period :
+https://github.com/bryanhanson/ChemoSpecUtils/pull/5/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/59/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/60/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/61/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/63/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/64/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/65/commits<br>
+https://github.com/bryanhanson/ChemoSpecUtils/pull/7/commits<br>
+https://github.com/bryanhanson/ChemoSpecUtils/pull/8/commits<br>
