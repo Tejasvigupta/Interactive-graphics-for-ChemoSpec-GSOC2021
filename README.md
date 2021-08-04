@@ -77,7 +77,7 @@ https://github.com/bryanhanson/ChemoSpecUtils/pull/4/commits<br>
 This week was probably the most toughest week.This week I worked on `plotScores` function. `plotScores` function is a combination of 4 functions working together to make the plot. It was a little difficult to get started with it as the code was more complex than the rest of the functions till now. Once I understood the code of the function, I started with plotting the points. This is a special function as it used two kinds of symbol modes. In case of `use.sym==FALSE` the function plots a plot with same symbols but different colors, representing differnt `spectra's`. On the other hand `use.sym==TRUE` plots a black and white plot with diffenrent `spectra's` representing differnt symbols.
 After plotting the points I worked on plotting the `ellipses`. Initially I decided to to use the `stat_ellipse` geom, but later decied to use `geom_path` over it. `Stat_ellipse` basically calculates the coordinates of the ellipse and then plot them, however in our case we already had the coordinates precalculated so using `stat_ellipse` seemed unnecessary. There are three options for plotting an ellipse in `plotScores`. First is classical way, second is robust way and the third way is plotting both of them together. I coded the ellipses one by one. After coding th plot my main focus was to use somehow use the `leg.loc` (legend location) used in base mode in `ggplot2` mode. Sadly, `ggplot2` does not provide a way of directly putting the `legend` in the desired position such as `topright` or `bottomright` etc . I manually hardcoded the conditions in `ggplot2` mode. Finally I worked on putting the ellipse information and method on the plot along with labelling of the points. 
 
-With this function `ggplot2` mode is comming to an end with final testing and documentation remaining. By the end of next week I will hopely start my work on `plotly` mode.
+With this function `ggplot2` mode is comming to an end with final testing and documentation remaining. By the end of next week I will hopefully start my work on `plotly` mode.
 
 ### My commits during this period :
 Commits of this week will be in the the pull request which will be merged next week.<br>
@@ -97,3 +97,12 @@ https://github.com/bryanhanson/ChemoSpec/pull/64/commits<br>
 https://github.com/bryanhanson/ChemoSpec/pull/65/commits<br>
 https://github.com/bryanhanson/ChemoSpecUtils/pull/7/commits<br>
 https://github.com/bryanhanson/ChemoSpecUtils/pull/8/commits<br>
+
+## Week8
+After giving the final touches in the `ggplot2` mode, I started my work on the `plotly` mode. The very first thing was to learn how to combine the `ggplot` and `plotly` code together. `plotly` provides a function specifically for `ggplot2` plot, `ggplotly`. The very first thing to do was to include the necessary imports for `plotly` mode.
+ After adding the imports I worked on the very first `plotSpectra` function. At first I decided to use the seperate `if` conditions for `plotly` mode, however most of the code was getting repeated so Bryan suggested to put `ggplot2` and `plotly` mode together, greatly reducing the code size. Since it was the first function in `plotly` mode I tried adding new stuff to it. After that I did some work on the `surveySpectra` and `surveySpectra2` function. Overall, not much work was done in the first half of the week as a lot  of the time was spent on reading the documentation. 
+ 
+With the end of this week, I move into the final and probably the most exciting phase of GSOC!
+
+### My commits during this period :
+https://github.com/bryanhanson/ChemoSpec/pull/71/commits<br>
