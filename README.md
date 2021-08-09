@@ -106,3 +106,17 @@ With the end of this week, I move into the final and probably the most exciting 
 
 ### My commits during this period :
 https://github.com/bryanhanson/ChemoSpec/pull/71/commits<br>
+
+## Week9
+This week was a really long week. I started to work on the remaining functions of the `ChemoSpec` and `ChemoSpecUtils`. I first completed the `surveySpectra` and `surveySpectra2` functions from the previous week. After that I worked on `reviewAllSpectra`, `ploat2Loadings`,`sPlotSpectra`, `plotSpectraDist` and finally `pcaDiag`. Adding plotly mode to all these functions was a similar process. I encountered a problem while adding plotly mode in `plotLoadings` function. The `plotLoading` function uses a `patchworks` package to put together all the plots in a grid. `patchworks` package works great with `ggplot2` plots. However, it is yet to be implemented for `plotly` plots, so after a little research we decided to pause the work on `plotLoadings` function. 
+After completing the `plotly` mode in `ChemoSpec` package, I decided to work on the `ChemoSpecUtils` functions. Bryan observed that some code was getting repeated in many functions, so my first task was to create a new function which cou;ld replace all the lengthy code into a single function call. I created `prepLegendCoords` function to solve the issue. After that I worked on the previous listed issue in `plotScore` function regarding `x and y axes labels`. After that Bryan came up with an idea to further reduce the extra code by creating a specific legend function(`ggAddLegend`) for `ggplot2` mode. These both functoin together have removed a lot of repeated code and will be useful for further functions. 
+
+With this week over, we move on to the final week of th coding period!
+
+### My commits during this period :
+https://github.com/bryanhanson/ChemoSpec/pull/71/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/72/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/73/commits<br>
+https://github.com/bryanhanson/ChemoSpec/pull/74/commits<br>
+https://github.com/bryanhanson/ChemoSpecUtils/pull/9/commits<br>
+
