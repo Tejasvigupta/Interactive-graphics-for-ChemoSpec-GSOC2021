@@ -12,11 +12,11 @@
 * [Phase 1](https://github.com/bryanhanson/ChemoSpec/issues/36) <br>
 * [Phase 2](https://github.com/bryanhanson/ChemoSpec/issues/66) <br>
 
-## New pacakges included in ChemoSpec
-* ggplot2 : Used for creating `ggplot2` plots
-* plotly : Used for creating `plotly` plots
-* ggrepel : Used for improving the labels in `ggplot2` plots
-* patchworks : Used for 
+## New packages included in ChemoSpec
+* ggplot2 
+* plotly 
+* ggrepel 
+* patchworks  
 * reshape2
 
 ## Example plots with `patchworks`,`ggrepel` and `ggplot2` packages
@@ -24,15 +24,17 @@
 
 
 ## Whats's done!
+*  After several weeks of experimentation, it was decided that creating new graphics modes using `ggplot2` and `plotly` would greatly enhance `ChemoSpec`, and that extension to shiny would not add much to user experience. With that change in plans by the mentors, <b>all project goals were reached</b>.
 *  New function `chkGraphicsopt` has been created to check the graphics mode.
 * `ggplot2` graphics mode has been added in the functions listed in [Phase 1](https://github.com/bryanhanson/ChemoSpec/issues/36) tasklist.
 * `plotly` graphics mode has been added in the functions listed in [Phase 2](https://github.com/bryanhanson/ChemoSpec/issues/66) tasklist.
 *  Many helper functions such as `PrepLegendCoords` and `.ggAddLegend` have been added for future additions.
 
-## What's left to be done!
-* Some functions in `ChemoSpec` and `ChemoSpecUtils` package are yet to be covered in both `ggplot2` and `plotly` mode.
-* `plotLoading` is done in `ggplot2` graphics mode, `plotly` graphics mode is yet to be implemented. 
-* `annotate_custom()` function is implemented in `ggplot2` but it is yet to be implemented in `plotly` mode so a couple of labels might not work in `plotly` graphics mode.
+## What's next for the project?!
+*  Some functions that were not in the original plan could still benefit from adding the new graphics mode.
+*  `plotLoadings` was created using the `patchwork` package for the best scientific and visual experience.`patchwork` does not yet work with `plotly`, so in the future if this becomes possible then `plotly` should be integrated.
+* `annotate_custom()` function is implemented in `ggplot2` but it is yet to be implemented in `plotly` mode so a couple of labels might not work in `plotly` graphics mode. As soon as `annotate_custom()` is translated by the `plotly` developers, `ChemoSpec` will be able to use to use it in `plotly` graphics mode as well.
+*  The project mentors will be double-checking everything and preparing both CS and CSU for release within a month.
 
 # Weekly Blogs with Commits :
 
@@ -146,7 +148,5 @@ With this week over, we move on to the final week of the coding period!
 [https://github.com/bryanhanson/ChemoSpec/pull/73/commits](https://github.com/bryanhanson/ChemoSpec/pull/73/commits)<br>
 [https://github.com/bryanhanson/ChemoSpec/pull/74/commits](https://github.com/bryanhanson/ChemoSpec/pull/74/commits)<br>
 [https://github.com/bryanhanson/ChemoSpecUtils/pull/9/commits](https://github.com/bryanhanson/ChemoSpecUtils/pull/9/commits)<br>
-
-## References
 
 
