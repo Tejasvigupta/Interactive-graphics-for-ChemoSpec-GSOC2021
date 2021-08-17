@@ -20,7 +20,7 @@
 * reshape2
 
 ## Example plots with `patchworks`,`ggrepel` and `ggplot2` packages
-  <img src="Images/plotLoadings.jpeg" width="450" height="350">&nbsp;&nbsp;&nbsp; <img src="Images/plot2Loadings.jpeg" width="450" height="350"> 
+  <img src="Images/plotLoadings.jpeg" width="450" height="350"> <img src="Images/plot2Loadings.jpeg" width="450" height="350"> 
 
 
 ## Whats's done!
