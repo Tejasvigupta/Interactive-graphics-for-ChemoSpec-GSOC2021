@@ -1,13 +1,11 @@
 <img src="Images/GSOC.png" width="800" height="150">
 
-# Weekly Progress Report
-
 ## Project Description
 [Interactive Graphics for ChemoSpec](https://github.com/rstats-gsoc/gsoc2021/wiki/Interactive-Graphics-for-ChemoSpec)
 
 ## Mentors
-* [Bryan Hanson](hanson@depauw.edu) <br>
-* [Erick Oduniyi](eeoduniyi@gmail.com) <br>
+* [Bryan Hanson](https://github.com/bryanhanson) <br>
+* [Erick Oduniyi](https://github.com/eoduniyi) <br>
 
 ## Tasks completed
 * [Community Bonding period](https://github.com/bryanhanson/ChemoSpec/issues/31) <br>
@@ -22,9 +20,7 @@
 * reshape2
 
 ## Example plots with `patchworks`,`ggrepel` and `ggplot2` packages
-`plotLoading`           |  `plot2Loadings`
-:-------------------------:|:-------------------------:
-  <img src="Images/plotLoadings.jpeg" width="450" height="350"> | <img src="Images/plot2Loadings.jpeg" width="450" height="350"> 
+  <img src="Images/plotLoadings.jpeg" width="450" height="350">&nbsp;&nbsp;&nbsp; <img src="Images/plot2Loadings.jpeg" width="450" height="350"> 
 
 
 ## Whats's done!
