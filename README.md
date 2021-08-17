@@ -21,6 +21,12 @@
 * patchworks
 * reshape2
 
+## Example plots with `patchworks`,`ggrepel` and `ggplot2` packages
+`plotLoading`           |  `plot2Loadings`
+:-------------------------:|:-------------------------:
+  <img src="Images/plotLoadings.jpeg" width="450" height="350"> | <img src="Images/plot2Loadings.jpeg" width="450" height="350"> 
+
+
 ## Whats's done!
 *  New function `chkGraphicsopt` has been created to check the graphics mode.
 * `ggplot2` graphics mode has been added in the functions listed in [Phase 1](https://github.com/bryanhanson/ChemoSpec/issues/36) tasklist.
@@ -144,4 +150,5 @@ With this week over, we move on to the final week of th coding period!
 [https://github.com/bryanhanson/ChemoSpec/pull/73/commits](https://github.com/bryanhanson/ChemoSpec/pull/73/commits)<br>
 [https://github.com/bryanhanson/ChemoSpec/pull/74/commits](https://github.com/bryanhanson/ChemoSpec/pull/74/commits)<br>
 [https://github.com/bryanhanson/ChemoSpecUtils/pull/9/commits](https://github.com/bryanhanson/ChemoSpecUtils/pull/9/commits)<br>
+
 
