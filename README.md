@@ -12,23 +12,23 @@
 * [Phase 1](https://github.com/bryanhanson/ChemoSpec/issues/36) <br>
 * [Phase 2](https://github.com/bryanhanson/ChemoSpec/issues/66) <br>
 
-## New packages included in ChemoSpec
+## New imports included in ChemoSpec
 * [ggplot2](https://ggplot2.tidyverse.org/)
 * [plotly](https://plotly.com/r/)
 * [ggrepel](https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html)
-* [patchworks](https://patchwork.data-imaginist.com/)
+* [patchwork](https://patchwork.data-imaginist.com/)
 * [reshape2](https://cran.r-project.org/web/packages/reshape2/index.html)
 
-## Example plots with `patchworks`,`ggrepel` and `ggplot2` packages
+## Example plots with `patchwork`,`ggrepel` and `ggplot2` packages
   <img src="Images/plotLoadings.jpeg" width="350" height="250"> &nbsp;<img src="Images/plot2Loadings.jpeg" width="350" height="250"> 
 
 
 ## What's done!
 *  After several weeks of experimentation, it was decided that creating new graphics modes using `ggplot2` and `plotly` would greatly enhance `ChemoSpec`, and that extension to shiny would not add much to user experience. With that change in plans by the mentors, <b>all project goals were reached</b>.
-*  New function `chkGraphicsopt` has been created to check the graphics mode.
-* `ggplot2` graphics mode has been added in the functions listed in [Phase 1](https://github.com/bryanhanson/ChemoSpec/issues/36) tasklist.
-* `plotly` graphics mode has been added in the functions listed in [Phase 2](https://github.com/bryanhanson/ChemoSpec/issues/66) tasklist.
-*  Many helper functions such as `PrepLegendCoords` and `.ggAddLegend` have been added for future additions.
+*  New function `chkGraphicsOpt` has been created to check the graphics mode.
+* `ggplot2` graphics mode has been added to the functions listed in [Phase 1](https://github.com/bryanhanson/ChemoSpec/issues/36) tasklist.
+* `plotly` graphics mode has been added to the functions listed in [Phase 2](https://github.com/bryanhanson/ChemoSpec/issues/66) tasklist.
+*  Many helper functions such as `.prepLegendCoords` and `.ggAddLegend` were written to avoid repeating code, and these will also make it much easier to convert other functions to ggplot2 mode in the future.
 
 ## What's next for the project?!
 *  Some functions that were not in the original plan could still benefit from adding the new graphics mode.
@@ -80,7 +80,7 @@ On to week 4!
 
 
 ## Week 4
-The very first task in this week was to solve the build and check process issue. Because `ChemoSpec` depends on `ChemoSpecUtils` we have decided to only locally run the build and check process for now. Since `pcaDiag` function was working fine locally, we merged it. After `pcaDiag` I decided to work on `splotSpectra`. `splotSpectra` was relativly simple to code and so I was able to do it without any problem. After this I worked on `plotSpectraDist` function. This function was also relativly simple to code, however I faced a problem in labeling part. This wasn't the first time I was facing this problem, so for now I decided to use a fudge factor to make the labels seperated from the plot points. While working on all the new functions we came across a new package `patchworks`. I had already worked on `plotLoading` function's `ggplot2` mode but we thought of giving a try to `patchworks` package.`patchwork` package helps user in organizing the different plots in a grid. The plot has turned out to be really nice, maybe even better than before. However, we are still thinking about the function. Overall it required quite a lot of thinking as I had to change the way data was organized in the `base` graphics for the code to work. Best part of coding this function was discovering a new way to plot multiple `ggplots` using `for` loop. For now we are sticking to plot made using `patchwork`.
+The very first task in this week was to solve the build and check process issue. Because `ChemoSpec` depends on `ChemoSpecUtils` we have decided to only locally run the build and check process for now. Since `pcaDiag` function was working fine locally, we merged it. After `pcaDiag` I decided to work on `splotSpectra`. `splotSpectra` was relativly simple to code and so I was able to do it without any problem. After this I worked on `plotSpectraDist` function. This function was also relativly simple to code, however I faced a problem in labeling part. This wasn't the first time I was facing this problem, so for now I decided to use a fudge factor to make the labels seperated from the plot points. While working on all the new functions we came across a new package `patchwork`. I had already worked on `plotLoading` function's `ggplot2` mode but we thought of giving a try to `patchwork` package.`patchwork` package helps user in organizing the different plots in a grid. The plot has turned out to be really nice, maybe even better than before. However, we are still thinking about the function. Overall it required quite a lot of thinking as I had to change the way data was organized in the `base` graphics for the code to work. Best part of coding this function was discovering a new way to plot multiple `ggplots` using `for` loop. For now we are sticking to plot made using `patchwork`.
 
 Next week we have use R! conference! 
 
@@ -138,8 +138,8 @@ With the end of this week, I move into the final and probably the most exciting 
 [https://github.com/bryanhanson/ChemoSpec/pull/71/commits](https://github.com/bryanhanson/ChemoSpec/pull/71/commits)<br>
 
 ## Week 9
-This week was a really long week. I started to work on the remaining functions of the `ChemoSpec` and `ChemoSpecUtils`. I first completed the `surveySpectra` and `surveySpectra2` functions from the previous week. After that I worked on `reviewAllSpectra`, `ploat2Loadings`,`sPlotSpectra`, `plotSpectraDist` and finally `pcaDiag`. Adding plotly mode to all these functions was a similar process. I encountered a problem while adding plotly mode in `plotLoadings` function. The `plotLoading` function uses a `patchworks` package to put together all the plots in a grid. `patchworks` package works great with `ggplot2` plots. However, it is yet to be implemented for `plotly` plots, so after a little research we decided to pause the work on `plotLoadings` function. 
-After completing the `plotly` mode in `ChemoSpec` package, I decided to work on the `ChemoSpecUtils` functions. Bryan observed that some code was getting repeated in many functions, so my first task was to create a new function which could replace all the lengthy code into a single function call. I created `prepLegendCoords` function to solve the issue. After that I worked on the previous listed issue in `plotScore` function regarding `x and y axes labels`. After that Bryan came up with an idea to further reduce the extra code by creating a specific legend function(`ggAddLegend`) for `ggplot2` mode. These both functoin together have removed a lot of repeated code and will be useful for further functions. 
+This week was a really long week. I started to work on the remaining functions of the `ChemoSpec` and `ChemoSpecUtils`. I first completed the `surveySpectra` and `surveySpectra2` functions from the previous week. After that I worked on `reviewAllSpectra`, `ploat2Loadings`,`sPlotSpectra`, `plotSpectraDist` and finally `pcaDiag`. Adding plotly mode to all these functions was a similar process. I encountered a problem while adding plotly mode in `plotLoadings` function. The `plotLoading` function uses a `patchwork` package to put together all the plots in a grid. `patchwork` package works great with `ggplot2` plots. However, it is yet to be implemented for `plotly` plots, so after a little research we decided to pause the work on `plotLoadings` function. 
+After completing the `plotly` mode in `ChemoSpec` package, I decided to work on the `ChemoSpecUtils` functions. Bryan observed that some code was getting repeated in many functions, so my first task was to create a new function which could replace all the lengthy code into a single function call. I created `.prepLegendCoords` function to solve the issue. After that I worked on the previous listed issue in `plotScore` function regarding `x and y axes labels`. After that Bryan came up with an idea to further reduce the extra code by creating a specific legend function(`.ggAddLegend`) for `ggplot2` mode. These both functoin together have removed a lot of repeated code and will be useful for further functions. 
 
 With this week over, we move on to the final week of the coding period!
 
@@ -149,4 +149,34 @@ With this week over, we move on to the final week of the coding period!
 [https://github.com/bryanhanson/ChemoSpec/pull/74/commits](https://github.com/bryanhanson/ChemoSpec/pull/74/commits)<br>
 [https://github.com/bryanhanson/ChemoSpecUtils/pull/9/commits](https://github.com/bryanhanson/ChemoSpecUtils/pull/9/commits)<br>
 
+## Week 10
+This week marks the end of the coding period.Ten weeks long journey final comes to end. This week I first added the newly created `.ggAddLegend` function in `.scorePlot` and then in `plotSpectra`. After that I worked on adding `plotly` graphics mode in `plotscores`,`aovPCAcores` and `plotScree` function. I did stumbled in the middle when I tried to change the default graphics mode from `base` to `ggplot2`.After lot's of searching and debugging I was able to reset it again to `base` graphics mode. After finishing all the plotting functions I worked on the small bugs that crept in due to me switching between the `ChemoSpec` and `ChemoSpecUtils`. After removing the bugs I updated the graphics option back to `ggplot2` mode. With this I finally completed my work! :smile: 
+
+### My commits during this period :
+[https://github.com/bryanhanson/ChemoSpec/pull/75/commits](https://github.com/bryanhanson/ChemoSpec/pull/75/commits)<br>
+[https://github.com/bryanhanson/ChemoSpec/pull/76/commits](https://github.com/bryanhanson/ChemoSpec/pull/76/commits)<br>
+[https://github.com/bryanhanson/ChemoSpecUtils/pull/10/commits](https://github.com/bryanhanson/ChemoSpecUtils/pull/10/commits)<br>
+[https://github.com/bryanhanson/ChemoSpecUtils/pull/11/commits](https://github.com/bryanhanson/ChemoSpecUtils/pull/11/commits)<br>
+[https://github.com/bryanhanson/ChemoSpecUtils/pull/12/commits](https://github.com/bryanhanson/ChemoSpecUtils/pull/12/commits)<br>
+[https://github.com/bryanhanson/ChemoSpecUtils/pull/13/commits](https://github.com/bryanhanson/ChemoSpecUtils/pull/13/commits)<br>
+[https://github.com/bryanhanson/ChemoSpecUtils/pull/14/commits](https://github.com/bryanhanson/ChemoSpecUtils/pull/14/commits)<br>
+
+# My Overall Experience
+Participating in GSOC has been an <b>amazing</b> journey. I worked on different plotting functions, used differnt R packages and gained a lot of experience by working under my mentor. There were a lot times when I was lost and even behind the deadline but I was able to figure out the things and complete my work in the end. My mentor, Bryan, helped me throughout the journey and it would have been impossible to finish all this without him. He was always there to help me out, even in the smallest issues. I am really honoured to work under him.
+
+I hope that the new graphics modes raise the bar of `ChemoSpec` package and benefit the whole community who uses this package. 
+
+## My whole coding journey can be summarised as:
+1. Understand the previously written code.
+2. Write the new code.
+3. Test the code.
+4. Try to come up with optimal solution to minimise the time and space complexity.
+5. If some code is getting reapeated, create a helper function to remove the excess code.
+6. Finally document the code. 
+7. Repeat.
+
+## Special mention: <br>
+<img src="Images/Screenshot (6623).png" width="700" height="150"> 
+
+<img src="Images/meme.jpg" width="300" height="300"> <br>
 Know more about [ChemoSpec](https://bryanhanson.github.io/ChemoSpec/) here. :smile:
