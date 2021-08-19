@@ -20,9 +20,11 @@
 * [reshape2](https://cran.r-project.org/web/packages/reshape2/index.html)
 
 ## Example plots with `patchwork`,`ggrepel` and `ggplot2` packages
-  <img src="Images/plotLoadings.jpeg" width="350" height="250"> &nbsp;<img src="Images/plot2Loadings.jpeg" width="350" height="250"> 
-
-
+ <img src="Images/plotLoadings.jpeg" width="550" height="450"><br>
+   <p> Package patchwork was used for this plot as different geoms were needed in the top two panels, which cannot be handled by ggplot2.  However, patchwork is not supported by plotly so this function was not enhanced by plotly.</p><br>
+ <img src="Images/plot2Loadings.jpeg" width="550" height="450"> 
+ <p>This is one of several plots in which the labeling of points was greatly improved compared to the base graphics implementation.  In particular, using ggrepel gives a much better visual experience with less code on our end.</p><br>
+ 
 ## What's done!
 *  After several weeks of experimentation, it was decided that creating new graphics modes using `ggplot2` and `plotly` would greatly enhance `ChemoSpec`, and that extension to shiny would not add much to user experience. With that change in plans by the mentors, <b>all project goals were reached</b>.
 *  New function `chkGraphicsOpt` has been created to check the graphics mode.
@@ -164,8 +166,6 @@ This week marks the end of the coding period.Ten weeks long journey final comes 
 # My Overall Experience
 Participating in GSOC has been an <b>amazing</b> journey. I worked on different plotting functions, used differnt R packages and gained a lot of experience by working under my mentor. There were a lot times when I was lost and even behind the deadline but I was able to figure out the things and complete my work in the end. My mentor, Bryan, helped me throughout the journey and it would have been impossible to finish all this without him. He was always there to help me out, even in the smallest issues. I am really honoured to work under him.
 
-I hope that the new graphics modes raise the bar of `ChemoSpec` package and benefit the whole community who uses this package. 
-
 ## My whole coding journey can be summarised as:
 1. Understand the previously written code.
 2. Write the new code.
@@ -175,8 +175,10 @@ I hope that the new graphics modes raise the bar of `ChemoSpec` package and bene
 6. Finally document the code. 
 7. Repeat.
 
-## Special mention: <br>
-<img src="Images/Screenshot (6623).png" width="700" height="150"> 
+I hope that the new graphics modes raise the bar of `ChemoSpec` package and benefit the community who uses this package. 
 
-<img src="Images/meme.jpg" width="300" height="300"> <br>
-Know more about [ChemoSpec](https://bryanhanson.github.io/ChemoSpec/) here. :smile:
+### Special mention: <br>
+<img src="Images/meme_1.jpg" width="400" height="400"> <br>
+<br>
+
+More about `ChemoSpec` can be found [here](https://bryanhanson.github.io/ChemoSpec/).
