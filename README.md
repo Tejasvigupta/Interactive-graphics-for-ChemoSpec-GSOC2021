@@ -152,7 +152,7 @@ With this week over, we move on to the final week of the coding period!
 [https://github.com/bryanhanson/ChemoSpecUtils/pull/9/commits](https://github.com/bryanhanson/ChemoSpecUtils/pull/9/commits)<br>
 
 ## Week 10
-This week marks the end of the coding period.Ten weeks long journey final comes to end. This week I first added the newly created `.ggAddLegend` function in `.scorePlot` and then in `plotSpectra`. After that I worked on adding `plotly` graphics mode in `plotscores`,`aovPCAcores` and `plotScree` function. I did stumbled in the middle when I tried to change the default graphics mode from `base` to `ggplot2`.After lot's of searching and debugging I was able to reset it again to `base` graphics mode. After finishing all the plotting functions I worked on the small bugs that crept in due to me switching between the `ChemoSpec` and `ChemoSpecUtils`. After removing the bugs I updated the graphics option back to `ggplot2` mode. With this I finally completed my work! :smile: 
+This week marks the end of the coding period.Ten weeks long journey final comes to end. This week I first added the newly created `.ggAddLegend` function in `.scorePlot` and then in `plotSpectra`. After that I worked on adding `plotly` graphics mode in `plotscores`,`aovPCAcores` and `plotScree` function. I did stumbled in the middle when I tried to change the default graphics mode from `base` to `ggplot2`.After lot's of searching and debugging I was able to reset it again to `base` graphics mode. After finishing all the plotting functions I worked on the small bugs that crept in due to me switching between the `ChemoSpec` and `ChemoSpecUtils`. After removing the bugs I updated the graphics option back to `ggplot2` mode. With this I finally completed my work! 
 
 ### My commits during this period :
 [https://github.com/bryanhanson/ChemoSpec/pull/75/commits](https://github.com/bryanhanson/ChemoSpec/pull/75/commits)<br>
@@ -164,15 +164,15 @@ This week marks the end of the coding period.Ten weeks long journey final comes 
 [https://github.com/bryanhanson/ChemoSpecUtils/pull/14/commits](https://github.com/bryanhanson/ChemoSpecUtils/pull/14/commits)<br>
 
 # My Overall Experience
-Participating in GSOC has been an <b>amazing</b> journey. I worked on different plotting functions, used differnt R packages and gained a lot of experience by working under my mentor. There were a lot times when I was lost and even behind the deadline but I was able to figure out the things and complete my work in the end. My mentor, Bryan, helped me throughout the journey and it would have been impossible to finish all this without him. He was always there to help me out, even in the smallest issues. I am really honoured to work under him.
+Participating in GSOC has been an <b>amazing</b> journey. I worked on different plotting functions, used differnt R packages and gained a lot of experience by working under my mentor. There were a lot times when I was lost and even behind the deadline but I was able to figure out the things and complete my work in the end. My mentor, Bryan, helped me throughout the journey and it would have been impossible to finish all this without him. 
 
 ## My whole coding journey can be summarised as:
 1. Understand the previously written code.
 2. Write the new code.
 3. Test the code.
 4. Try to come up with optimal solution to minimise the time and space complexity.
-5. If some code is getting reapeated, create a helper function to remove the excess code.
-6. Finally document the code. 
+5. If some code is getting repeated, create a helper function to remove the excess code.
+6. Finally write documentation of the code. 
 7. Repeat.
 
 I hope that the new graphics modes raise the bar of `ChemoSpec` package and benefit the community who uses this package. 
